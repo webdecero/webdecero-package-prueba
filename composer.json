@@ -1,0 +1,34 @@
+{
+    "name": "webdecero/paquete-prueba",
+    "description": "Paquete Prueba",
+    "version": "1.0.0", 
+    "type": "library",
+    "keywords": ["webdecero", "laravel", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mayer Abraham Pérez González"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webdecero\\Prueba\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webdecero\\Prueba\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webdecero\\Prueba\\WebdeceroServiceProvider"
+            ]
+        }
+    }
+}
